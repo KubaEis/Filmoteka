@@ -12,4 +12,6 @@ public class Herec {
         return rok_narozeni;
     }
 
+
+
 }

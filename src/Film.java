@@ -1,9 +1,9 @@
 public class Film {
     private String nazev;
-    private String rok_vydani;
+    private int rok_vydani;
     private int hodnoceni;
     private Herec[] polehercu;
-    public Film(String nazev, String rok_vydani, int hodnoceni, Herec[] polehercu) {
+    public Film(String nazev, int rok_vydani, int hodnoceni, Herec[] polehercu) {
         this.nazev = nazev;
         this.rok_vydani = rok_vydani;
         this.hodnoceni = hodnoceni;
@@ -14,7 +14,7 @@ public class Film {
         return nazev;
     }
 
-    public String getRok_vydani() {
+    public int getRok_vydani() {
         return rok_vydani;
     }
 
