@@ -43,5 +43,16 @@ public class Main {
                 }
             }
         }
+        Film nejlepsi = film[0];
+        for (Film film1 : film) {
+            if (film1.getHodnoceni() < nejlepsi.getHodnoceni()) {
+                nejlepsi = film1;
+            }
+        }
+        System.out.println("nejlepsi film je: " + nejlepsi.getNazev());
+        for (int j = 0; j < nejlepsi.getPolehercu().length; j++) {
+            System.out.println("Jména herců v tomto filmu jsou: ");
+            System.out.println((j + 1) + ". " + nejlepsi.getPolehercu()[j].getJmeno());
+        }
     }
 }
